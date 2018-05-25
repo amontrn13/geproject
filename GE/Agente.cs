@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GE_GUI
+namespace GE
 {
     class Agente
     {

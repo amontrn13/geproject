@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GE_GUI
+namespace GE
 {
     public partial class Abrir_Archivo : Form
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GE_GUI.Properties
+namespace GE.Properties
 {
 
 

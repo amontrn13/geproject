@@ -1,4 +1,4 @@
-﻿namespace GE_GUI
+﻿namespace GE
 {
     partial class Form1
     {

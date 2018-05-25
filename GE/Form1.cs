@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace GE_GUI
+namespace GE
 {
     public partial class Form1 : Form
     {

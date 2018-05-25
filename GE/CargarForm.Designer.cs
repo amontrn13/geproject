@@ -1,4 +1,4 @@
-﻿namespace GE_GUI
+﻿namespace GE
 {
     partial class Abrir_Archivo
     {

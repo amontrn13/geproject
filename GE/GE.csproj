@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{887FB8BA-B9FE-4A56-AE26-F1605A09047F}</ProjectGuid>
+    <ProjectGuid>111e6fea-36d5-48b8-a190-d42f16bf9014</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>GE_GUI</RootNamespace>
-    <AssemblyName>GE-GUI</AssemblyName>
+    <RootNamespace>GE</RootNamespace>
+    <AssemblyName>GE</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
