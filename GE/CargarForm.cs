@@ -13,7 +13,7 @@ namespace GE
 {
     public partial class Abrir_Archivo : Form
     {
-        Controller controller = Controller.GetInstance();
+        ControladorAgente controller = ControladorAgente.GetInstance();
         OpenFileDialog x = new OpenFileDialog();
 
         public Abrir_Archivo()
@@ -33,7 +33,7 @@ namespace GE
             {
                 controller.CrearXml(path);
             }
-            Form1 form1 = new Form1();
+            MenuForm form1 = new MenuForm();
             form1.Show();
 
             Hide();

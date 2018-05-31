@@ -18,12 +18,12 @@ namespace GE
         {
             this.ID = ID;
             this.Nombre = Nombre;
-            Codigo_Servicios = new ArrayList();
+            this.Codigo_Servicios = new ArrayList();
         }
 
         public void AgregarCodigo(string codigo)
         {
-            Codigo_Servicios.Add(codigo);
+           this.Codigo_Servicios.Add(codigo);
         }
     }
 }

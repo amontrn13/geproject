@@ -7,23 +7,23 @@ using System.Threading.Tasks;
 
 namespace GE
 {
-    class Controller
+    class ControladorOrden
     {
-        public ArrayList agentes;
+        public ArrayList ordenes;
         private XML xmlArchivo;
-        private static Controller controller = null;
+        private static ControladorOrden controller = null;
 
-        private Controller()
+        private ControladorOrden()
         {
             xmlArchivo = new XML();
             AgregarXML();
         }
 
-        public static Controller GetInstance()
+        public static ControladorOrden GetInstance()
         {
             if (controller == null)
             {
-                controller = new Controller();
+                controller = new ControladorOrden();
             }
             return controller;
         }
@@ -34,7 +34,7 @@ namespace GE
             {
                 xmlArchivo.AgregarXML(Environment.CurrentDirectory + "\\data_agents.xml");
                 xmlArchivo.LeerXML();
-                agentes = xmlArchivo.ObtenerAgentes();
+                ordenes = xmlArchivo.ObtenerAgentes();
             }
             catch (Exception)
             { }

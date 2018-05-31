@@ -27,7 +27,7 @@ namespace GE
         public void CreateXml(string path)
         {
             AgregarXML(path);
-            doc.Save(Environment.CurrentDirectory + "\\data_agents.xml");
+            doc.Save(Environment.CurrentDirectory + "\\datos\\agentes.xml");
         }
 
         public void LeerXML()
