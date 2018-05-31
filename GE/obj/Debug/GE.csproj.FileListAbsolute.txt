@@ -1,0 +1,11 @@
+C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\bin\Debug\GE.exe.config
+C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\bin\Debug\GE.exe
+C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\bin\Debug\GE.pdb
+C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\obj\Debug\GE.csprojResolveAssemblyReference.cache
+C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\obj\Debug\GE.Form1.resources
+C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\obj\Debug\GE.Abrir_Archivo.resources
+C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\obj\Debug\GE.Properties.Resources.resources
+C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\obj\Debug\GE.csproj.GenerateResource.Cache
+C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\obj\Debug\GE.csproj.CoreCompileInputs.cache
+C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\obj\Debug\GE.exe
+C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\obj\Debug\GE.pdb
