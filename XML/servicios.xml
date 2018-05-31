@@ -1,9 +1,0 @@
-<servicios>
-	<servicio codigo="ICE" nombre="Instalación de cocina eléctrica" duracion="2" comision="250"/>
-	<servicio codigo="ICG" nombre="Instalación de cocina eléctrica" duracion="4" comision="400"/>
-	<servicio codigo="ILA" nombre="Instalación de lavadora automática" duracion="1" comision="200"/>
-	<servicio codigo="RCE" nombre="Reparación de cocina eléctrica" duracion="4" comision="300"/>
-	<servicio codigo="RCG" nombre="Reparación de cocina de gas" duracion="6" comision="500"/>
-	<servicio codigo="RLA" nombre="Reparación de lavadora automática" duracion="6" comision="250"/>
-</servicios>
-
