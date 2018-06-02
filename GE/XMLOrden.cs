@@ -21,7 +21,7 @@ namespace GE
         public void CrearXmlOrdenes(string path)
         {
             AgregarXmlOrden(path);
-            docOrdenes.Save(Environment.CurrentDirectory + "\\datos\\ordenes.xml");
+            docOrdenes.Save(Environment.CurrentDirectory + "\\ordenes.xml");
         }
 
         public void AgregarXmlOrden(string path)

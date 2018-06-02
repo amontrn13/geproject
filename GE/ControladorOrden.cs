@@ -32,7 +32,7 @@ namespace GE
         {
             try
             {
-                xmlArchivOrden.AgregarXmlOrden(Environment.CurrentDirectory + "\\datos\\ordenes.xml");
+                xmlArchivOrden.AgregarXmlOrden(Environment.CurrentDirectory + "\\ordenes.xml");
                 xmlArchivOrden.LeerXMLOrdenes();
                 ordenes = xmlArchivOrden.ObtenerOrden();
             }
