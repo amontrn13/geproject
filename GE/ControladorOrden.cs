@@ -10,13 +10,13 @@ namespace GE
     class ControladorOrden
     {
         public ArrayList ordenes;
-        private XML xmlArchivo;
+        private XMLOrden xmlArchivOrden;
         private static ControladorOrden controller = null;
 
         private ControladorOrden()
         {
-            xmlArchivo = new XML();
-            AgregarXML();
+            xmlArchivOrden = new XMLOrden();
+            AgregarXMLOrden();
         }
 
         public static ControladorOrden GetInstance()
@@ -28,26 +28,22 @@ namespace GE
             return controller;
         }
 
-        private void AgregarXML()
+        private void AgregarXMLOrden()
         {
             try
             {
-                xmlArchivo.AgregarXML(Environment.CurrentDirectory + "\\data_agents.xml");
-                xmlArchivo.LeerXML();
-                ordenes = xmlArchivo.ObtenerAgentes();
+                xmlArchivOrden.AgregarXmlOrden(Environment.CurrentDirectory + "\\datos\\ordenes.xml");
+                xmlArchivOrden.LeerXMLOrdenes();
+                ordenes = xmlArchivOrden.ObtenerOrden();
             }
             catch (Exception)
             { }
-
-
         }
 
-
-
-        public void CrearXml(string path)
+        public void CrearXmlOrden(string path)
         {
-            xmlArchivo.CreateXml(path);
-            AgregarXML();
+            xmlArchivOrden.CrearXmlOrdenes(path);
+            AgregarXMLOrden();
         }
 
     }

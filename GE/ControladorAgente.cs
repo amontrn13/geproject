@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GE
 {
@@ -32,17 +33,15 @@ namespace GE
         {
             try
             {
-                xmlArchivo.AgregarXML(Environment.CurrentDirectory + "\\data_agents.xml");
+                xmlArchivo.AgregarXML(Environment.CurrentDirectory + "\\agentes.xml");
                 xmlArchivo.LeerXML();
                 agentes = xmlArchivo.ObtenerAgentes();
             }
             catch (Exception)
-            { }
+            {
 
-
+            }
         }
-
-
 
         public void CrearXml(string path)
         {
