@@ -18,17 +18,18 @@ namespace GE
             DatosAgentes = new ArrayList();
         }
 
+
+        public void CreateXml(string path)
+        {
+            AgregarXML(path);
+            doc.Save(Environment.CurrentDirectory + "\\agentes.xml");
+        }
         /*Cargar Archivo*/
         public void AgregarXML(string path)
         {
             doc = XDocument.Load(path);
         }
 
-        public void CreateXml(string path)
-        {
-            AgregarXML(path);
-            doc.Save(Environment.CurrentDirectory + "\\datos\\agentes.xml");
-        }
 
         public void LeerXML()
         {
@@ -51,11 +52,6 @@ namespace GE
             }
         }
 
-
-
-
-
-
         public ArrayList ObtenerAgentes()
         {
             ArrayList agentes = new ArrayList();
@@ -74,11 +70,11 @@ namespace GE
 
             }
 
-            foreach (Agente agent in agentes)
+            foreach (Agente a in agentes)
             {
-                Console.WriteLine(agent.ID);
-                Console.WriteLine(agent.Nombre);
-                foreach (string codigo in agent.Codigo_Servicios) {
+                Console.WriteLine(a.ID);
+                Console.WriteLine(a.Nombre);
+                foreach (string codigo in a.Codigo_Servicios) {
 
                     Console.WriteLine(codigo);
                 }

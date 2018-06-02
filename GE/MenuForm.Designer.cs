@@ -34,31 +34,32 @@
             this.btnCargaOrdenes = new System.Windows.Forms.Button();
             this.btnRepartirOrden = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Códigos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.agenteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.codigoServiciosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.codigoServiciosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bttnRepartir = new System.Windows.Forms.Button();
-            this.bttnAgeOrd = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordenBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.agenteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.bttnAgeOrd = new System.Windows.Forms.Button();
+            this.bttnRepartir = new System.Windows.Forms.Button();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.codigoServiciosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.codigoServiciosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agenteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordenBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.codigoServiciosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.codigoServiciosBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordenBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agenteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAgregar
@@ -126,12 +127,30 @@
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // Códigos
             // 
             this.Códigos.DataPropertyName = "Nombre";
             this.Códigos.HeaderText = "Códigos de Servicios";
             this.Códigos.Name = "Códigos";
             this.Códigos.ReadOnly = true;
+            // 
+            // agenteBindingSource
+            // 
+            this.agenteBindingSource.DataSource = typeof(GE.Agente);
             // 
             // dataGridView2
             // 
@@ -149,6 +168,28 @@
             this.dataGridView2.Size = new System.Drawing.Size(662, 525);
             this.dataGridView2.TabIndex = 10;
             // 
+            // iDDataGridViewTextBoxColumn1
+            // 
+            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
+            // 
+            // clienteDataGridViewTextBoxColumn
+            // 
+            this.clienteDataGridViewTextBoxColumn.DataPropertyName = "Cliente";
+            this.clienteDataGridViewTextBoxColumn.HeaderText = "Cliente";
+            this.clienteDataGridViewTextBoxColumn.Name = "clienteDataGridViewTextBoxColumn";
+            // 
+            // codigoDataGridViewTextBoxColumn
+            // 
+            this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
+            this.codigoDataGridViewTextBoxColumn.HeaderText = "Codigo";
+            this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
+            // 
+            // ordenBindingSource
+            // 
+            this.ordenBindingSource.DataSource = typeof(GE.Orden);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.button1);
@@ -160,6 +201,60 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1262, 67);
             this.panel1.TabIndex = 11;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.button1.Location = new System.Drawing.Point(1101, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(138, 50);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Cerrar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // bttnAgeOrd
+            // 
+            this.bttnAgeOrd.BackColor = System.Drawing.SystemColors.Window;
+            this.bttnAgeOrd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bttnAgeOrd.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bttnAgeOrd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
+            this.bttnAgeOrd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.bttnAgeOrd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnAgeOrd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnAgeOrd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
+            this.bttnAgeOrd.Location = new System.Drawing.Point(778, 8);
+            this.bttnAgeOrd.Name = "bttnAgeOrd";
+            this.bttnAgeOrd.Size = new System.Drawing.Size(183, 50);
+            this.bttnAgeOrd.TabIndex = 4;
+            this.bttnAgeOrd.Text = "Agentes y Órdenes";
+            this.bttnAgeOrd.UseVisualStyleBackColor = false;
+            // 
+            // bttnRepartir
+            // 
+            this.bttnRepartir.BackColor = System.Drawing.SystemColors.Window;
+            this.bttnRepartir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bttnRepartir.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bttnRepartir.FlatAppearance.BorderSize = 0;
+            this.bttnRepartir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
+            this.bttnRepartir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.bttnRepartir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnRepartir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnRepartir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
+            this.bttnRepartir.Location = new System.Drawing.Point(967, 8);
+            this.bttnRepartir.Name = "bttnRepartir";
+            this.bttnRepartir.Size = new System.Drawing.Size(138, 50);
+            this.bttnRepartir.TabIndex = 3;
+            this.bttnRepartir.Text = "Repartir";
+            this.bttnRepartir.UseVisualStyleBackColor = false;
             // 
             // labelTitle
             // 
@@ -196,99 +291,21 @@
             this.codigoServiciosBindingSource1.DataMember = "Codigo_Servicios";
             this.codigoServiciosBindingSource1.DataSource = this.agenteBindingSource;
             // 
-            // bttnRepartir
+            // button2
             // 
-            this.bttnRepartir.BackColor = System.Drawing.SystemColors.Window;
-            this.bttnRepartir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bttnRepartir.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bttnRepartir.FlatAppearance.BorderSize = 0;
-            this.bttnRepartir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
-            this.bttnRepartir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
-            this.bttnRepartir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnRepartir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnRepartir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
-            this.bttnRepartir.Location = new System.Drawing.Point(967, 8);
-            this.bttnRepartir.Name = "bttnRepartir";
-            this.bttnRepartir.Size = new System.Drawing.Size(138, 50);
-            this.bttnRepartir.TabIndex = 3;
-            this.bttnRepartir.Text = "Repartir";
-            this.bttnRepartir.UseVisualStyleBackColor = false;
-            // 
-            // bttnAgeOrd
-            // 
-            this.bttnAgeOrd.BackColor = System.Drawing.SystemColors.Window;
-            this.bttnAgeOrd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bttnAgeOrd.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bttnAgeOrd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
-            this.bttnAgeOrd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
-            this.bttnAgeOrd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnAgeOrd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnAgeOrd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
-            this.bttnAgeOrd.Location = new System.Drawing.Point(778, 8);
-            this.bttnAgeOrd.Name = "bttnAgeOrd";
-            this.bttnAgeOrd.Size = new System.Drawing.Size(183, 50);
-            this.bttnAgeOrd.TabIndex = 4;
-            this.bttnAgeOrd.Text = "Agentes y Órdenes";
-            this.bttnAgeOrd.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.button1.Location = new System.Drawing.Point(1101, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 50);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Cerrar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // iDDataGridViewTextBoxColumn1
-            // 
-            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
-            // 
-            // clienteDataGridViewTextBoxColumn
-            // 
-            this.clienteDataGridViewTextBoxColumn.DataPropertyName = "Cliente";
-            this.clienteDataGridViewTextBoxColumn.HeaderText = "Cliente";
-            this.clienteDataGridViewTextBoxColumn.Name = "clienteDataGridViewTextBoxColumn";
-            // 
-            // codigoDataGridViewTextBoxColumn
-            // 
-            this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
-            this.codigoDataGridViewTextBoxColumn.HeaderText = "Codigo";
-            this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
-            // 
-            // ordenBindingSource
-            // 
-            this.ordenBindingSource.DataSource = typeof(GE.Orden);
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // agenteBindingSource
-            // 
-            this.agenteBindingSource.DataSource = typeof(GE.Agente);
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
+            this.button2.Location = new System.Drawing.Point(534, 74);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(151, 43);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Mostrar Agentes";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MenuForm
             // 
@@ -296,6 +313,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
@@ -308,15 +326,16 @@
             this.Name = "MenuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MenuForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agenteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordenBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.codigoServiciosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.codigoServiciosBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordenBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agenteBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -343,6 +362,7 @@
         private System.Windows.Forms.Button bttnAgeOrd;
         private System.Windows.Forms.Button bttnRepartir;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

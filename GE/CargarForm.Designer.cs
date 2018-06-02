@@ -70,6 +70,7 @@
             this.Controls.Add(this.btnAceptar);
             this.Name = "Abrir_Archivo";
             this.Text = "Abrir Archivo";
+            this.Load += new System.EventHandler(this.Abrir_Archivo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

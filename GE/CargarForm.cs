@@ -47,5 +47,10 @@ namespace GE
                 txtAbrirArchivos.Text = x.FileName;
             }
         }
+
+        private void Abrir_Archivo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

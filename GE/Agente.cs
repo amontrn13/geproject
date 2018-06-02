@@ -9,8 +9,8 @@ namespace GE
 {
     class Agente
     {
-        public int ID { get; set; }
-
+        public int ID{ get; set; }
+       
         public string Nombre { get; set; }
         public ArrayList Codigo_Servicios { get; set; }
 
@@ -27,7 +27,7 @@ namespace GE
         {
             this.Codigo_Servicios.Add(codigo);
         }
-
+        
         private string getCodigo_Servicios()
         {
             string total = "";
@@ -38,6 +38,6 @@ namespace GE
             }
             return total;
         }
-
+        
     }
 }

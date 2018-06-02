@@ -9,3 +9,25 @@ C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\obj\Debug\GE.csp
 C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\obj\Debug\GE.exe
 C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\obj\Debug\GE.pdb
 C:\Users\mario\Google Drive\TEC\2018\IA\PROYECTO_2\geproject\GE\obj\Debug\GE.MenuForm.resources
+C:\Users\samantha\Documents\github\geproject\GE\bin\Debug\GE.exe.config
+C:\Users\samantha\Documents\github\geproject\GE\bin\Debug\GE.exe
+C:\Users\samantha\Documents\github\geproject\GE\bin\Debug\GE.pdb
+C:\Users\samantha\Documents\github\geproject\GE\obj\Debug\GE.csprojResolveAssemblyReference.cache
+C:\Users\samantha\Documents\github\geproject\GE\obj\Debug\GE.MenuForm.resources
+C:\Users\samantha\Documents\github\geproject\GE\obj\Debug\GE.Abrir_Archivo.resources
+C:\Users\samantha\Documents\github\geproject\GE\obj\Debug\GE.Properties.Resources.resources
+C:\Users\samantha\Documents\github\geproject\GE\obj\Debug\GE.csproj.GenerateResource.cache
+C:\Users\samantha\Documents\github\geproject\GE\obj\Debug\GE.csproj.CoreCompileInputs.cache
+C:\Users\samantha\Documents\github\geproject\GE\obj\Debug\GE.exe
+C:\Users\samantha\Documents\github\geproject\GE\obj\Debug\GE.pdb
+C:\Users\samantha\Documents\github\ia_2018_1\geproject\GE\obj\Debug\GE.csprojResolveAssemblyReference.cache
+C:\Users\samantha\Documents\github\ia_2018_1\geproject\GE\obj\Debug\GE.MenuForm.resources
+C:\Users\samantha\Documents\github\ia_2018_1\geproject\GE\obj\Debug\GE.Abrir_Archivo.resources
+C:\Users\samantha\Documents\github\ia_2018_1\geproject\GE\obj\Debug\GE.Properties.Resources.resources
+C:\Users\samantha\Documents\github\ia_2018_1\geproject\GE\obj\Debug\GE.csproj.GenerateResource.cache
+C:\Users\samantha\Documents\github\ia_2018_1\geproject\GE\obj\Debug\GE.csproj.CoreCompileInputs.cache
+C:\Users\samantha\Documents\github\ia_2018_1\geproject\GE\obj\Debug\GE.exe
+C:\Users\samantha\Documents\github\ia_2018_1\geproject\GE\obj\Debug\GE.pdb
+C:\Users\samantha\Documents\github\ia_2018_1\geproject\GE\bin\Debug\GE.exe.config
+C:\Users\samantha\Documents\github\ia_2018_1\geproject\GE\bin\Debug\GE.exe
+C:\Users\samantha\Documents\github\ia_2018_1\geproject\GE\bin\Debug\GE.pdb
