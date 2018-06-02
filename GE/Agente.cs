@@ -10,6 +10,7 @@ namespace GE
     class Agente
     {
         public int ID { get; set; }
+
         public string Nombre { get; set; }
         public ArrayList Codigo_Servicios { get; set; }
 
@@ -21,9 +22,22 @@ namespace GE
             this.Codigo_Servicios = new ArrayList();
         }
 
+
         public void AgregarCodigo(string codigo)
         {
-           this.Codigo_Servicios.Add(codigo);
+            this.Codigo_Servicios.Add(codigo);
         }
+
+        private string getCodigo_Servicios()
+        {
+            string total = "";
+            List<string> codigos = new List<string>();
+            foreach (string codigo in Codigo_Servicios)
+            {
+                codigos.Add(codigo);
+            }
+            return total;
+        }
+
     }
 }
