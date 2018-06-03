@@ -39,7 +39,7 @@
             this.bttnRepartir = new System.Windows.Forms.Button();
             this.labelTitle = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnMostrar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -71,7 +71,7 @@
             this.btnCargaOrdenes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCargaOrdenes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargaOrdenes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
-            this.btnCargaOrdenes.Location = new System.Drawing.Point(223, 74);
+            this.btnCargaOrdenes.Location = new System.Drawing.Point(542, 74);
             this.btnCargaOrdenes.Name = "btnCargaOrdenes";
             this.btnCargaOrdenes.Size = new System.Drawing.Size(151, 43);
             this.btnCargaOrdenes.TabIndex = 5;
@@ -193,21 +193,21 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button2
+            // btnMostrar
             // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
-            this.button2.Location = new System.Drawing.Point(534, 74);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 43);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Mostrar Agentes";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnMostrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMostrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMostrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMostrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
+            this.btnMostrar.Location = new System.Drawing.Point(223, 74);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(151, 43);
+            this.btnMostrar.TabIndex = 12;
+            this.btnMostrar.Text = "Mostrar Agentes";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -216,7 +216,7 @@
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Window;
             this.dataGridView1.Location = new System.Drawing.Point(66, 123);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(448, 432);
+            this.dataGridView1.Size = new System.Drawing.Size(448, 525);
             this.dataGridView1.TabIndex = 13;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
@@ -227,7 +227,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.btnRepartirOrden);
@@ -260,7 +260,7 @@
         private System.Windows.Forms.Button bttnAgeOrd;
         private System.Windows.Forms.Button bttnRepartir;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
