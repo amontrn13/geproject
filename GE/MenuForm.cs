@@ -21,15 +21,6 @@ namespace GE
 
         }
 
-
-
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            Abrir_Archivo CargarForm = new Abrir_Archivo();
-            CargarForm.Show();
-            Hide();
-        }
-
          private void btnCargaOrdenes_Click(object sender, EventArgs e)
         {
             Hide();
@@ -60,7 +51,17 @@ namespace GE
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnMostrarAgente_Click(object sender, EventArgs e)
         {
 
             DataTable dt = new DataTable();
@@ -79,14 +80,11 @@ namespace GE
 
         }
 
-        private void MenuForm_Load(object sender, EventArgs e)
+        private void btnCargarAgente_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
+            Abrir_Archivo CargarForm = new Abrir_Archivo();
+            CargarForm.Show();
+            Hide();
         }
     }
 }

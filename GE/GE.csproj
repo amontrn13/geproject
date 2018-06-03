@@ -49,6 +49,7 @@
     <Compile Include="ControladorAgente.cs" />
     <Compile Include="ControladorOrden.cs" />
     <Compile Include="ControladorServicio.cs" />
+    <Compile Include="Genetico.cs" />
     <Compile Include="MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
