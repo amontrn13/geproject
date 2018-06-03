@@ -27,6 +27,7 @@ namespace GE
         /*Cargar Archivo*/
         public void AgregarXML(string path)
         {
+            DatosAgentes = new ArrayList();
             doc = XDocument.Load(path);
         }
 

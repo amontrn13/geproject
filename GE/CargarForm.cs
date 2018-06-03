@@ -33,10 +33,9 @@ namespace GE
             {
                 controller.CrearXml(path);
             }
-            MenuForm form1 = new MenuForm();
+           /* MenuForm form1 = new MenuForm();
             form1.Show();
-
-            Hide();
+            */
             
         }
 
