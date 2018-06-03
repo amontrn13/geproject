@@ -14,13 +14,30 @@ namespace GE
     public partial class MenuForm : Form
     {
         ControladorAgente controller = ControladorAgente.GetInstance();
-
         public MenuForm()
         {
             InitializeComponent();
+            MostrarAgente();
+
         }
 
-      
+        private void MostrarAgente()
+        {
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID");
+            dt.Columns.Add("Nombre");
+            dt.Columns.Add("Codigo de servicios");
+
+            foreach (Agente a in controller.agentes)
+            {
+                var resultado = string.Join(",", a.Codigo_Servicios.ToArray()
+                    .Select(w => w.ToString())
+                    .ToArray());
+                dt.Rows.Add(new object[] { a.ID, a.Nombre,resultado});
+            }
+            dataGridView1.DataSource = dt;
+        }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
