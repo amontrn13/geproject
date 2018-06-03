@@ -24,4 +24,68 @@
       <codigo>ICE</codigo>
     </codigo_servicios>
   </agente>
+  <agente>
+    <id>004</id>
+    <nombre>Laura Alvarado</nombre>
+    <codigo_servicios>
+      <codigo>ICE</codigo>
+      <codigo>ICG</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>005</id>
+    <nombre>Victor Mendoza</nombre>
+    <codigo_servicios>
+      <codigo>ICE</codigo>
+      <codigo>ICG</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>005</id>
+    <nombre>Karla Mendoza</nombre>
+    <codigo_servicios>
+      <codigo>ICE</codigo>
+      <codigo>ICG</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>006</id>
+    <nombre>Denise Mendoza</nombre>
+    <codigo_servicios>
+      <codigo>ICE</codigo>
+      <codigo>ICG</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>007</id>
+    <nombre>Carlos Mendoza</nombre>
+    <codigo_servicios>
+      <codigo>ICE</codigo>
+      <codigo>ICG</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>008</id>
+    <nombre>Mariela Gamboa</nombre>
+    <codigo_servicios>
+      <codigo>ICE</codigo>
+      <codigo>ICG</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>009</id>
+    <nombre>Laura Arias</nombre>
+    <codigo_servicios>
+      <codigo>ICE</codigo>
+      <codigo>ICG</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>010</id>
+    <nombre>Óscar Arias</nombre>
+    <codigo_servicios>
+      <codigo>ICE</codigo>
+      <codigo>ICG</codigo>
+    </codigo_servicios>
+  </agente>
 </agentes>
