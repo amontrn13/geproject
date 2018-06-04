@@ -78,7 +78,7 @@ namespace GE
             ArrayList numAgentes = new ArrayList();
             for(int i = 0; i < ordenes.Count; i++)
             {
-                if (agentes.Contains(ord.Codigo))
+                if (agentes.Contains(ord.Codigo_Servicios))
                 {
                     numAgentes.Add(i);
                 }
