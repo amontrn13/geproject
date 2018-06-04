@@ -98,12 +98,12 @@ namespace GE
         {
             List<ArrayList> generacion = new List<ArrayList>();
             int iteraciones = 0;
-            int maxIteraciones = 100;
+            int maxIteraciones = 10;
 
             while (iteraciones < maxIteraciones)
             {
                 //generacion.Insert(0, CrearGeneracion(ordenes, 500));
-                generacion = CrearGeneracion(ordenes, 500);
+                generacion = CrearGeneracion(ordenes, 50);
                 CalcularFitness(generacion);
                 //generation.sort(key = lambda x: x[len(lines)], reverse = True)
                 PopFitness(generacion);
@@ -169,12 +169,14 @@ namespace GE
 
                     numAgentes.Add(i);
                 }
+                /*
                 Console.WriteLine("\n");
                 Console.WriteLine("Agente:\n");
                 Console.WriteLine(agentes[i].Codigo_Servicios);
                 Console.WriteLine("Tipo de Orden:\n");
                 Console.WriteLine(ord.Codigo_Servicios);
                 Console.WriteLine("\n");
+                */
             }
             return numAgentes;
         }
