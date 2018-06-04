@@ -34,14 +34,6 @@
   </agente>
   <agente>
     <id>005</id>
-    <nombre>Victor Mendoza</nombre>
-    <codigo_servicios>
-      <codigo>ICE</codigo>
-      <codigo>ICG</codigo>
-    </codigo_servicios>
-  </agente>
-  <agente>
-    <id>005</id>
     <nombre>Karla Mendoza</nombre>
     <codigo_servicios>
       <codigo>ICE</codigo>
@@ -210,6 +202,14 @@
     <id>025</id>
     <nombre>Guillermo Garay</nombre>
     <codigo_servicios>
+      <codigo>ICG</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>026</id>
+    <nombre>Victor Mendoza</nombre>
+    <codigo_servicios>
+      <codigo>ICE</codigo>
       <codigo>ICG</codigo>
     </codigo_servicios>
   </agente>
