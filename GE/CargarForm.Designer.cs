@@ -35,36 +35,45 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(294, 76);
+            this.btnAceptar.BackColor = System.Drawing.SystemColors.Window;
+            this.btnAceptar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
+            this.btnAceptar.Location = new System.Drawing.Point(403, 103);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(114, 25);
+            this.btnAceptar.Size = new System.Drawing.Size(114, 30);
             this.btnAceptar.TabIndex = 0;
             this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // txtAbrirArchivos
             // 
-            this.txtAbrirArchivos.Location = new System.Drawing.Point(150, 28);
+            this.txtAbrirArchivos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAbrirArchivos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
+            this.txtAbrirArchivos.Location = new System.Drawing.Point(150, 37);
             this.txtAbrirArchivos.Name = "txtAbrirArchivos";
-            this.txtAbrirArchivos.Size = new System.Drawing.Size(258, 20);
+            this.txtAbrirArchivos.Size = new System.Drawing.Size(367, 23);
             this.txtAbrirArchivos.TabIndex = 1;
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(12, 28);
+            this.btnOpen.BackColor = System.Drawing.SystemColors.Window;
+            this.btnOpen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
+            this.btnOpen.Location = new System.Drawing.Point(12, 31);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(114, 25);
+            this.btnOpen.Size = new System.Drawing.Size(132, 30);
             this.btnOpen.TabIndex = 2;
             this.btnOpen.Text = "Abrir archivo";
-            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.UseVisualStyleBackColor = false;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // Abrir_Archivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 123);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(529, 164);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.txtAbrirArchivos);
             this.Controls.Add(this.btnAceptar);

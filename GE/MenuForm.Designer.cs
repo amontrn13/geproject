@@ -41,6 +41,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMostrarAgente = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnMostrarOrden = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,6 +105,7 @@
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(698, 525);
             this.dataGridView2.TabIndex = 10;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // panel1
             // 
@@ -226,12 +228,29 @@
             this.dataGridView1.TabIndex = 13;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
+            // btnMostrarOrden
+            // 
+            this.btnMostrarOrden.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMostrarOrden.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMostrarOrden.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
+            this.btnMostrarOrden.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMostrarOrden.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrarOrden.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
+            this.btnMostrarOrden.Location = new System.Drawing.Point(699, 74);
+            this.btnMostrarOrden.Name = "btnMostrarOrden";
+            this.btnMostrarOrden.Size = new System.Drawing.Size(151, 43);
+            this.btnMostrarOrden.TabIndex = 14;
+            this.btnMostrarOrden.Text = "Mostrar Órdenes";
+            this.btnMostrarOrden.UseVisualStyleBackColor = true;
+            this.btnMostrarOrden.Click += new System.EventHandler(this.btnMostrarOrden_Click);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.btnMostrarOrden);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnMostrarAgente);
             this.Controls.Add(this.panel1);
@@ -268,6 +287,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnMostrarAgente;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnMostrarOrden;
     }
 }
 

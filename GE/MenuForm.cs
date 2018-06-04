@@ -13,18 +13,23 @@ namespace GE
 {
     public partial class MenuForm : Form
     {
+       ControladorOrden controlador = ControladorOrden.GetInstance();
         ControladorAgente controller = ControladorAgente.GetInstance();
+
         public MenuForm()
         {
             InitializeComponent();
-
-
+            dataGridView1.EnableHeadersVisualStyles = false;
         }
 
-         private void btnCargaOrdenes_Click(object sender, EventArgs e)
+        private void btnCargaOrdenes_Click(object sender, EventArgs e)
         {
-            Hide();
+
+            Abrir_Archivo CargarForm = new Abrir_Archivo();
+            CargarForm.Show();
+           
         }
+        
 
         private void btnRepartirOrden_Click(object sender, EventArgs e)
         {
@@ -65,7 +70,7 @@ namespace GE
 
         private void btnMostrarAgente_Click(object sender, EventArgs e)
         {
-
+            
             DataTable dt = new DataTable();
             dt.Columns.Add("ID");
             dt.Columns.Add("Nombre");
@@ -79,14 +84,36 @@ namespace GE
                 dt.Rows.Add(new object[] { a.ID, a.Nombre, resultado });
             }
             dataGridView1.DataSource = dt;
-
+            
         }
+
 
         private void btnCargarAgente_Click(object sender, EventArgs e)
         {
             Abrir_Archivo CargarForm = new Abrir_Archivo();
             CargarForm.Show();
-            Hide();
+            
+        }
+
+        private void btnMostrarOrden_Click(object sender, EventArgs e)
+        {
+            DataTable dtOden = new DataTable();
+
+            dtOden.Columns.Add("ID");
+            dtOden.Columns.Add("Cliente");
+            dtOden.Columns.Add("Codigo");
+
+            foreach (Orden o in controlador.ordenes)
+            {
+                dtOden.Rows.Add(new object[] { o.ID, o.Cliente, o.Codigo_Servicios });
+            }
+            dataGridView2.DataSource = dtOden;
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
