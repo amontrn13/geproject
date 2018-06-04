@@ -26,7 +26,6 @@ namespace GE
 
         public void AgregarXmlOrden(string path)
         {
-            
             docOrdenes = XDocument.Load(path);
         }
 
@@ -46,7 +45,6 @@ namespace GE
                 {
                     Console.WriteLine(da);
                 }
-               
             }
         }
 
@@ -54,9 +52,7 @@ namespace GE
         {
             ArrayList ordenes = new ArrayList();
             foreach (ArrayList datosOrdenp in DatosOrdenes)
-            {
-
-                Orden orden;
+            {   Orden orden;
                 int ID = Int32.Parse(datosOrdenp[0].ToString());
                 string cliente = datosOrdenp[1].ToString();
                 string Codigo_Servicios = datosOrdenp[2].ToString();
@@ -70,7 +66,6 @@ namespace GE
                 Console.WriteLine(a.Cliente);
                 Console.WriteLine(a.Codigo_Servicios);
             }
-            /* End Debug part*/
             return ordenes;
 
         }

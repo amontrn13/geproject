@@ -48,7 +48,6 @@
     <Compile Include="Agente.cs" />
     <Compile Include="control\ControladorAgente.cs" />
     <Compile Include="control\ControladorOrden.cs" />
-    <Compile Include="control\ControladorServicio.cs" />
     <Compile Include="Genetico.cs" />
     <Compile Include="MenuForm.cs">
       <SubType>Form</SubType>
@@ -68,7 +67,6 @@
     <Compile Include="Servicios.cs" />
     <Compile Include="XML\XML.cs" />
     <Compile Include="XML\XMLOrden.cs" />
-    <Compile Include="XML\XMLServicio.cs" />
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>

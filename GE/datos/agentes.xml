@@ -80,11 +80,136 @@
       <codigo>ICG</codigo>
     </codigo_servicios>
   </agente>
-    <agente>
+  <agente>
     <id>010</id>
-    <nombre>Óscar Arias</nombre>
+    <nombre>Bryan Murillo</nombre>
+    <codigo_servicios>
+      <codigo>RLA</codigo>
+      <codigo>ILA</codigo>
+      <codigo>RCG</codigo>
+      <codigo>ICE</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>011</id>
+    <nombre>Steven Leon</nombre>
+    <codigo_servicios>
+      <codigo>RLA</codigo>
+      <codigo>RCE</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>012</id>
+    <nombre>David Ulloa</nombre>
+    <codigo_servicios>
+      <codigo>ICG</codigo>
+      <codigo>RLA</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>013</id>
+    <nombre>Jorge bermudes</nombre>
+    <codigo_servicios>
+      <codigo>RLA</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>014</id>
+    <nombre>Raquel Díaz</nombre>
     <codigo_servicios>
       <codigo>ICE</codigo>
+      <codigo>ILA</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>015</id>
+    <nombre>Sofia Díaz</nombre>
+    <codigo_servicios>
+      <codigo>ICE</codigo>
+      <codigo>ILA</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>016</id>
+    <nombre>Daniel Zelaya</nombre>
+    <codigo_servicios>
+      <codigo>ICG</codigo>
+      <codigo>RCE</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>017</id>
+    <nombre>Ariel Guzman</nombre>
+    <codigo_servicios>
+      <codigo>RCG</codigo>
+      <codigo>RLA</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>018</id>
+    <nombre>Josue Garcia</nombre>
+    <codigo_servicios>
+      <codigo>RCG</codigo>
+      <codigo>RLA</codigo>
+      <codigo>ICE</codigo>
+      <codigo>RCE</codigo>
+      <codigo>ICG</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>019</id>
+    <nombre>Pablo Vargas</nombre>
+    <codigo_servicios>
+      <codigo>ILA</codigo>
+      <codigo>RLA</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>020</id>
+    <nombre>Michelle Segura</nombre>
+    <codigo_servicios>
+      <codigo>ICE</codigo>
+      <codigo>RLA</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+      <id>021</id>
+      <nombre>Vanessa Campos</nombre>
+      <codigo_servicios>
+        <codigo>ICG</codigo>
+        <codigo>ILA</codigo>
+        <codigo>ICE</codigo>
+      </codigo_servicios>
+  </agente>
+  <agente>
+    <id>022</id>
+    <nombre>Luis Molina</nombre>
+    <codigo_servicios>
+      <codigo>ICG</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>023</id>
+    <nombre>Sergio Martinez</nombre>
+    <codigo_servicios>
+      <codigo>RCE</codigo>
+      <codigo>RCG</codigo>
+      <codigo>RLA</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>024</id>
+    <nombre>Joel Arrieta</nombre>
+    <codigo_servicios>
+      <codigo>ICG</codigo>
+      <codigo>RCE</codigo>
+      <codigo>ICE</codigo>
+    </codigo_servicios>
+  </agente>
+  <agente>
+    <id>025</id>
+    <nombre>Guillermo Garay</nombre>
+    <codigo_servicios>
       <codigo>ICG</codigo>
     </codigo_servicios>
   </agente>
