@@ -12,6 +12,7 @@ namespace GE
         public static Genetico instancia = null;
         private ArrayList ordenes;
         private ArrayList agentes;
+        private int n = 80;
 
         private Genetico() {
             ordenes = new ArrayList();
