@@ -14,12 +14,14 @@ namespace GE
         public string Nombre { get; set; }
         public ArrayList Codigo_Servicios { get; set; }
 
+        public ArrayList Ordenes { get; set; }
 
         public Agente(int ID, string Nombre)
         {
             this.ID = ID;
             this.Nombre = Nombre;
             this.Codigo_Servicios = new ArrayList();
+            this.Ordenes = new ArrayList();
         }
 
 

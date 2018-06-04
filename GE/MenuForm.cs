@@ -28,7 +28,9 @@ namespace GE
 
         private void btnRepartirOrden_Click(object sender, EventArgs e)
         {
-            Hide();
+            //Hide();
+            Genetico programa = Genetico.GetInstancia();
+            programa.RepartirOrdenes();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
