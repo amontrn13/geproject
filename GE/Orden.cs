@@ -11,12 +11,12 @@ namespace GE
     {
         public int ID { get; set; }
         public String Cliente { get; set; }
-        public String Codigo { get; set; }
+        public String Codigo_Servicios { get; set; }
 
-        public Orden(int ID, String Cliente, String Codigo) {
+        public Orden(int ID, String Cliente, String Codigo_Servicios) {
             this.ID = ID;
             this.Cliente = Cliente;
-            this.Codigo = Codigo;
+            this.Codigo_Servicios = Codigo_Servicios;
         }
     }
 }

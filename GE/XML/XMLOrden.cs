@@ -32,16 +32,19 @@ namespace GE
 
         public void LeerXMLOrdenes()
         {
-            foreach (XElement element in docOrdenes.Descendants("ordenes"))
+            foreach (XElement element in docOrdenes.Descendants("orden"))
             {
                 ArrayList datosOrdenp = new ArrayList
                 {
                     element.Element("id").Value,
-                    element.Element("nombre").Value,
-                    element.Element("servicio").Value
+                    element.Element("cliente").Value,
+                    element.Element("codigo").Value
                 };
                 DatosOrdenes.Add(datosOrdenp);
-
+                foreach (string da in datosOrdenp)
+                {
+                    Console.WriteLine(da);
+                }
             }
         }
 
@@ -49,23 +52,20 @@ namespace GE
         {
             ArrayList ordenes = new ArrayList();
             foreach (ArrayList datosOrdenp in DatosOrdenes)
-            {
-
-                Orden orden;
+            {   Orden orden;
                 int ID = Int32.Parse(datosOrdenp[0].ToString());
                 string cliente = datosOrdenp[1].ToString();
-                string codigo = datosOrdenp[2].ToString();
+                string Codigo_Servicios = datosOrdenp[2].ToString();
 
-                orden = new Orden(ID, cliente, codigo);
+                orden = new Orden(ID, cliente, Codigo_Servicios);
                 ordenes.Add(orden);
             }
-            foreach (Orden orden in ordenes)
+            foreach (Orden a in ordenes)
             {
-                Console.WriteLine(orden.ID);
-                Console.WriteLine(orden.Cliente);
-                Console.WriteLine(orden.Codigo);
+                Console.WriteLine(a.ID);
+                Console.WriteLine(a.Cliente);
+                Console.WriteLine(a.Codigo_Servicios);
             }
-            /* End Debug part*/
             return ordenes;
 
         }

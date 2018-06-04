@@ -14,6 +14,8 @@ namespace GE
     public partial class Abrir_Archivo : Form
     {
         ControladorAgente controller = ControladorAgente.GetInstance();
+        ControladorOrden Controlador = ControladorOrden.GetInstance();
+
         OpenFileDialog x = new OpenFileDialog();
 
         public Abrir_Archivo()
@@ -31,11 +33,17 @@ namespace GE
 
             if (extension.Equals(".xml"))
             {
+                MessageBox.Show("Se ha subido correctamente el archivo","Mensaje",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 controller.CrearXml(path);
+                Controlador.CrearXmlOrden(path);
             }
-           /* MenuForm form1 = new MenuForm();
-            form1.Show();
-            */
+            else {
+                MessageBox.Show("Formato incorrecto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+ 
+            Hide();
+            
             
         }
 
