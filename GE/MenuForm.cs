@@ -13,18 +13,30 @@ namespace GE
 {
     public partial class MenuForm : Form
     {
+       ControladorOrden controlador = ControladorOrden.GetInstance();
         ControladorAgente controller = ControladorAgente.GetInstance();
+
         public MenuForm()
         {
             InitializeComponent();
-
-
+            dataGridView1.EnableHeadersVisualStyles = false;
         }
 
-         private void btnCargaOrdenes_Click(object sender, EventArgs e)
+        private void btnCargaOrdenes_Click(object sender, EventArgs e)
         {
-            Hide();
+            DataTable dtOden = new DataTable();
+
+            dtOden.Columns.Add("ID Orden");
+            dtOden.Columns.Add("Cliente");
+            dtOden.Columns.Add("Código");
+
+            foreach (Orden o in controlador.ordenes)
+            {
+                dtOden.Rows.Add(new object[] { o.ID, o.Cliente, o.Codigo });
+            }
+            dataGridView2.DataSource = dtOden;
         }
+        
 
         private void btnRepartirOrden_Click(object sender, EventArgs e)
         {
@@ -63,7 +75,7 @@ namespace GE
 
         private void btnMostrarAgente_Click(object sender, EventArgs e)
         {
-
+            
             DataTable dt = new DataTable();
             dt.Columns.Add("ID");
             dt.Columns.Add("Nombre");
@@ -77,14 +89,15 @@ namespace GE
                 dt.Rows.Add(new object[] { a.ID, a.Nombre, resultado });
             }
             dataGridView1.DataSource = dt;
-
+            
         }
+
 
         private void btnCargarAgente_Click(object sender, EventArgs e)
         {
             Abrir_Archivo CargarForm = new Abrir_Archivo();
             CargarForm.Show();
-            Hide();
+            
         }
     }
 }

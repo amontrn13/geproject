@@ -14,6 +14,8 @@ namespace GE
     public partial class Abrir_Archivo : Form
     {
         ControladorAgente controller = ControladorAgente.GetInstance();
+        ControladorOrden Controlador = ControladorOrden.GetInstance();
+
         OpenFileDialog x = new OpenFileDialog();
 
         public Abrir_Archivo()
@@ -33,9 +35,15 @@ namespace GE
             {
                 controller.CrearXml(path);
             }
-           /* MenuForm form1 = new MenuForm();
+            else {
+
+                txtAbrirArchivos.Text = ("Formato incorrecto");
+            }
+            
+            MenuForm form1 = new MenuForm();
             form1.Show();
-            */
+            Hide();
+            
             
         }
 

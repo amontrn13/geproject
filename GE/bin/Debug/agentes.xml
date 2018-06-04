@@ -1,91 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <agentes>
   <agente>
-    <id>001</id>
+    <id>1</id>
     <nombre>Samantha Mendoza</nombre>
     <codigo_servicios>
       <codigo>ICE</codigo>
       <codigo>ICG</codigo>
+      <codigo>ILA</codigo>
     </codigo_servicios>
   </agente>
   <agente>
-    <id>002</id>
+    <id>2</id>
     <nombre>Mario Chinchilla</nombre>
     <codigo_servicios>
       <codigo>ICE</codigo>
       <codigo>RCE</codigo>
       <codigo>RCG</codigo>
-    </codigo_servicios>
-  </agente>
-  <agente>
-    <id>003</id>
-    <nombre>Carlos Hernández</nombre>
-    <codigo_servicios>
-      <codigo>ICE</codigo>
-    </codigo_servicios>
-  </agente>
-  <agente>
-    <id>004</id>
-    <nombre>Laura Alvarado</nombre>
-    <codigo_servicios>
-      <codigo>ICE</codigo>
-      <codigo>ICG</codigo>
-    </codigo_servicios>
-  </agente>
-  <agente>
-    <id>005</id>
-    <nombre>Victor Mendoza</nombre>
-    <codigo_servicios>
-      <codigo>ICE</codigo>
-      <codigo>ICG</codigo>
-    </codigo_servicios>
-  </agente>
-  <agente>
-    <id>005</id>
-    <nombre>Karla Mendoza</nombre>
-    <codigo_servicios>
-      <codigo>ICE</codigo>
-      <codigo>ICG</codigo>
-    </codigo_servicios>
-  </agente>
-  <agente>
-    <id>006</id>
-    <nombre>Denise Mendoza</nombre>
-    <codigo_servicios>
-      <codigo>ICE</codigo>
-      <codigo>ICG</codigo>
-    </codigo_servicios>
-  </agente>
-  <agente>
-    <id>007</id>
-    <nombre>Carlos Mendoza</nombre>
-    <codigo_servicios>
-      <codigo>ICE</codigo>
-      <codigo>ICG</codigo>
-    </codigo_servicios>
-  </agente>
-  <agente>
-    <id>008</id>
-    <nombre>Mariela Gamboa</nombre>
-    <codigo_servicios>
-      <codigo>ICE</codigo>
-      <codigo>ICG</codigo>
-    </codigo_servicios>
-  </agente>
-  <agente>
-    <id>009</id>
-    <nombre>Laura Arias</nombre>
-    <codigo_servicios>
-      <codigo>ICE</codigo>
-      <codigo>ICG</codigo>
-    </codigo_servicios>
-  </agente>
-  <agente>
-    <id>010</id>
-    <nombre>Óscar Arias</nombre>
-    <codigo_servicios>
-      <codigo>ICE</codigo>
-      <codigo>ICG</codigo>
+      <codigo>RLA</codigo>
     </codigo_servicios>
   </agente>
 </agentes>

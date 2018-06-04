@@ -32,7 +32,7 @@ namespace GE
 
         public void LeerXMLOrdenes()
         {
-            foreach (XElement element in docOrdenes.Descendants("ordenes"))
+            foreach (XElement element in docOrdenes.Descendants("orden"))
             {
                 ArrayList datosOrdenp = new ArrayList
                 {
@@ -41,7 +41,11 @@ namespace GE
                     element.Element("servicio").Value
                 };
                 DatosOrdenes.Add(datosOrdenp);
-
+            /*    foreach (string da in datosOrdenp)
+                {
+                    Console.WriteLine(da);
+                }
+                */
             }
         }
 
@@ -59,11 +63,11 @@ namespace GE
                 orden = new Orden(ID, cliente, codigo);
                 ordenes.Add(orden);
             }
-            foreach (Orden orden in ordenes)
+            foreach (Orden a in ordenes)
             {
-                Console.WriteLine(orden.ID);
-                Console.WriteLine(orden.Cliente);
-                Console.WriteLine(orden.Codigo);
+                Console.WriteLine(a.ID);
+                Console.WriteLine(a.Cliente);
+                Console.WriteLine(a.Codigo);
             }
             /* End Debug part*/
             return ordenes;

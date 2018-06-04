@@ -11,7 +11,7 @@ namespace GE
     {
         public ArrayList ordenes;
         private XMLOrden xmlArchivOrden;
-        private static ControladorOrden controller = null;
+        private static ControladorOrden controladorOrden = null;
 
         private ControladorOrden()
         {
@@ -21,11 +21,10 @@ namespace GE
 
         public static ControladorOrden GetInstance()
         {
-            if (controller == null)
+            if (controladorOrden == null)
             {
-                controller = new ControladorOrden();
-            }
-            return controller;
+                controladorOrden = new ControladorOrden();}
+            return controladorOrden;
         }
 
         private void AgregarXMLOrden()
