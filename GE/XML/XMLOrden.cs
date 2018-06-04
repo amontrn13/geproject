@@ -11,11 +11,21 @@ namespace GE
     class XMLOrden
     {
         XDocument docOrdenes;
+        private static XMLOrden xml = null;
         public ArrayList DatosOrdenes;
 
         public XMLOrden()
         {
             DatosOrdenes = new ArrayList();
+        }
+
+        public static XMLOrden GetInstance()
+        {
+            if (xml == null)
+            {
+                xml = new XMLOrden();
+            }
+            return xml;
         }
 
         public void CrearXmlOrdenes(string path)
@@ -41,10 +51,6 @@ namespace GE
                     element.Element("codigo").Value
                 };
                 DatosOrdenes.Add(datosOrdenp);
-                foreach (string da in datosOrdenp)
-                {
-                    Console.WriteLine(da);
-                }
             }
         }
 
@@ -59,12 +65,6 @@ namespace GE
 
                 orden = new Orden(ID, cliente, Codigo_Servicios);
                 ordenes.Add(orden);
-            }
-            foreach (Orden a in ordenes)
-            {
-                Console.WriteLine(a.ID);
-                Console.WriteLine(a.Cliente);
-                Console.WriteLine(a.Codigo_Servicios);
             }
             return ordenes;
 

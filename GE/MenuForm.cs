@@ -13,7 +13,7 @@ namespace GE
 {
     public partial class MenuForm : Form
     {
-       ControladorOrden controlador = ControladorOrden.GetInstance();
+        ControladorOrden controlador = ControladorOrden.GetInstance();
         ControladorAgente controller = ControladorAgente.GetInstance();
 
         public MenuForm()

@@ -11,10 +11,19 @@ namespace GE
     class XML
     {
         XDocument doc;
-        public ArrayList DatosAgentes; 
+        public ArrayList DatosAgentes;
+        private static XML xml = null;
         public XML()
         {
             DatosAgentes = new ArrayList();
+        }
+        public static XML GetInstance()
+        {
+            if (xml == null)
+            {
+                xml = new XML();
+            }
+            return xml;
         }
 
         public void CreateXml(string path)
@@ -40,33 +49,26 @@ namespace GE
                 };
                 foreach (XElement codigo in element.Descendants("codigo"))
                 {
-                    datosAgentep.Add(codigo.Value);}
+                    datosAgentep.Add(codigo.Value);
+                }
                 DatosAgentes.Add(datosAgentep);
-                foreach (string da in datosAgentep)
-                { Console.WriteLine(da);}
             }
         }
 
         public ArrayList ObtenerAgentes()
         {
             ArrayList agentes = new ArrayList();
-            foreach (ArrayList datosAgentep in DatosAgentes) {
-
+            foreach (ArrayList datosAgentep in DatosAgentes)
+            {
                 Agente agente;
                 int ID = Int32.Parse(datosAgentep[0].ToString());
                 string nombre = datosAgentep[1].ToString();
                 agente = new Agente(ID, nombre);
-                for (int i = 2; i < datosAgentep.Count; i++) {
-                    agente.AgregarCodigo(datosAgentep[i].ToString());}
-                agentes.Add(agente); }
-
-            foreach (Agente a in agentes)
-            {
-                Console.WriteLine(a.ID);
-                Console.WriteLine(a.Nombre);
-                foreach (string codigo in a.Codigo_Servicios) {
-                    Console.WriteLine(codigo);
+                for (int i = 2; i < datosAgentep.Count; i++)
+                {
+                    agente.AgregarCodigo(datosAgentep[i].ToString());
                 }
+                agentes.Add(agente);
             }
             return agentes;
 
