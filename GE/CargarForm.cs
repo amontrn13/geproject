@@ -33,16 +33,15 @@ namespace GE
 
             if (extension.Equals(".xml"))
             {
+                MessageBox.Show("Se ha subido correctamente el archivo","Mensaje",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 controller.CrearXml(path);
                 Controlador.CrearXmlOrden(path);
             }
             else {
+                MessageBox.Show("Formato incorrecto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                txtAbrirArchivos.Text = ("Formato incorrecto");
             }
-            
-            MenuForm form1 = new MenuForm();
-            form1.Show();
+ 
             Hide();
             
             
