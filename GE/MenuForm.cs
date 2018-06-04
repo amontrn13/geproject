@@ -24,17 +24,10 @@ namespace GE
 
         private void btnCargaOrdenes_Click(object sender, EventArgs e)
         {
-            DataTable dtOden = new DataTable();
 
-            dtOden.Columns.Add("ID Orden");
-            dtOden.Columns.Add("Cliente");
-            dtOden.Columns.Add("Código");
-
-            foreach (Orden o in controlador.ordenes)
-            {
-                dtOden.Rows.Add(new object[] { o.ID, o.Cliente, o.Codigo });
-            }
-            dataGridView2.DataSource = dtOden;
+            Abrir_Archivo CargarForm = new Abrir_Archivo();
+            CargarForm.Show();
+           
         }
         
 
@@ -98,6 +91,27 @@ namespace GE
             Abrir_Archivo CargarForm = new Abrir_Archivo();
             CargarForm.Show();
             
+        }
+
+        private void btnMostrarOrden_Click(object sender, EventArgs e)
+        {
+            DataTable dtOden = new DataTable();
+
+            dtOden.Columns.Add("ID");
+            dtOden.Columns.Add("Cliente");
+            dtOden.Columns.Add("Codigo");
+
+            foreach (Orden o in controlador.ordenes)
+            {
+                dtOden.Rows.Add(new object[] { o.ID, o.Cliente, o.Codigo_Servicios });
+            }
+            dataGridView2.DataSource = dtOden;
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -22,8 +22,7 @@ namespace GE
         public static ControladorOrden GetInstance()
         {
             if (controladorOrden == null)
-            {
-                controladorOrden = new ControladorOrden();}
+            {controladorOrden = new ControladorOrden();}
             return controladorOrden;
         }
 

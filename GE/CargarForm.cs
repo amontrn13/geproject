@@ -34,6 +34,7 @@ namespace GE
             if (extension.Equals(".xml"))
             {
                 controller.CrearXml(path);
+                Controlador.CrearXmlOrden(path);
             }
             else {
 
