@@ -14,27 +14,27 @@ namespace GE
         public string Nombre { get; set; }
         public ArrayList Codigo_Servicios { get; set; }
 
-        public ArrayList Ordenes { get; set; }
+        public List<Orden> Ordenes { get; set; }
         public Agente()
         {
             this.ID = new int();
             this.Nombre = "";
             this.Codigo_Servicios = new ArrayList();
-            this.Ordenes = new ArrayList();
+            this.Ordenes = new List<Orden>();
         }
         public Agente(int ID, string Nombre)
         {
             this.ID = ID;
             this.Nombre = Nombre;
             this.Codigo_Servicios = new ArrayList();
-            this.Ordenes = new ArrayList();
+            this.Ordenes = new List<Orden>();
         }
         public Agente(int ID, string Nombre, ArrayList codigos)
         {
             this.ID = ID;
             this.Nombre = Nombre;
             this.Codigo_Servicios = codigos;
-            this.Ordenes = new ArrayList();
+            this.Ordenes = new List<Orden>();
         }
 
 

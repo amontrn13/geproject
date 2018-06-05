@@ -22,13 +22,6 @@ namespace GE
         private void IniciarListas()
         {
             Console.WriteLine("IniciarListas");
-            /*ControladorAgente controlAgente = ControladorAgente.GetInstance();
-            ControladorOrden controlOrden = ControladorOrden.GetInstance();
-            controlAgente.ConvertirXMLObjetos();
-            controlOrden.ConvertirXMLObjetos();
-            this.agentes = controlAgente.agentesObjetos;
-            this.ordenes = controlOrden.ordernesObjetos;*/
-
             XML xmlArchivoAgente = XML.GetInstance();
             XMLOrden xmlArchivoOrden = XMLOrden.GetInstance();
             for (int i = 0; i < xmlArchivoAgente.ObtenerAgentes().Count; i++)
@@ -90,7 +83,12 @@ namespace GE
         {
             for (int i = 0; i < agentes.Count; i++)
             {
-                agentes[i].Ordenes.Insert(0,individuo[i]);
+                Agente agnt = (Agente)individuo[i];
+                //agentes[i].Ordenes.Insert(0,agnt.Ordenes);
+                foreach (Orden ord in agnt.Ordenes)
+                {
+                    agentes[i].Ordenes.Insert(0, ord);
+                }
             }
         }
 
@@ -112,6 +110,19 @@ namespace GE
             }
             CalcularFitness(generacion);
             DistribuirOrdenes(generacion[0]);
+            Console.WriteLine("Fin de la ejecución");
+            foreach (Agente agente in agentes)
+            {
+                Console.WriteLine("------------------------");
+                Console.WriteLine(agente.ID);
+                Console.WriteLine(agente.Nombre);
+                foreach (Orden orden in agente.Ordenes)
+                {
+                    Console.WriteLine(orden.Cliente);
+                    Console.WriteLine(orden.Codigo_Servicios);
+                }
+                Console.WriteLine("\n");
+            }
         } 
         /*
         -Se genera la población inicial, tomando como base
@@ -159,24 +170,16 @@ namespace GE
         */
         private ArrayList AgentesPorTipo(Orden ord)
         {
-            Console.WriteLine("AgentesPorTipo");
+            //Console.WriteLine("AgentesPorTipo");
             ArrayList numAgentes = new ArrayList();
             for(int i = 0; i < agentes.Count; i++)
             {
-                Console.WriteLine("For " + i);
+                //Console.WriteLine("For " + i);
                 if (agentes[i].Codigo_Servicios.Contains(ord.Codigo_Servicios))
                 {
 
                     numAgentes.Add(i);
                 }
-                /*
-                Console.WriteLine("\n");
-                Console.WriteLine("Agente:\n");
-                Console.WriteLine(agentes[i].Codigo_Servicios);
-                Console.WriteLine("Tipo de Orden:\n");
-                Console.WriteLine(ord.Codigo_Servicios);
-                Console.WriteLine("\n");
-                */
             }
             return numAgentes;
         }
