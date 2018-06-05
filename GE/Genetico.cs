@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
+using System.Windows.Forms;
 
 namespace GE
 {
@@ -100,10 +101,9 @@ namespace GE
 
             while (iteraciones < maxIteraciones)
             {
-                //generacion.Insert(0, CrearGeneracion(ordenes, 500));
+                //Cantidad de individuos;
                 generacion = CrearGeneracion(ordenes, 50);
                 CalcularFitness(generacion);
-                //generation.sort(key = lambda x: x[len(lines)], reverse = True)
                 PopFitness(generacion);
                 generacion = generacion.GetRange(0,10);
                 iteraciones++;
@@ -111,6 +111,7 @@ namespace GE
             CalcularFitness(generacion);
             DistribuirOrdenes(generacion[0]);
             Console.WriteLine("Fin de la ejecución");
+            MessageBox.Show("Órdenes Asignadas Exitosamente", "Completado",MessageBoxButtons.OK,MessageBoxIcon.Information);
             foreach (Agente agente in agentes)
             {
                 Console.WriteLine("------------------------");
@@ -118,6 +119,7 @@ namespace GE
                 Console.WriteLine(agente.Nombre);
                 foreach (Orden orden in agente.Ordenes)
                 {
+                    Console.WriteLine("\nÓrdenes del agente");
                     Console.WriteLine(orden.Cliente);
                     Console.WriteLine(orden.Codigo_Servicios);
                 }
